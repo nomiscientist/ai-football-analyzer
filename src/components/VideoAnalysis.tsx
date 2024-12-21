@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { analyzeVideo } from '../services/videoAnalysis';
-import './videoAnalysis.css';
+import './styles/components.css';
 
 const VideoAnalysis: React.FC = () => {
     const [videoFile, setVideoFile] = useState<File | null>(null);

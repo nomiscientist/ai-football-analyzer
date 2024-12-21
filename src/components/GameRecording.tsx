@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './gameRecording.css';
+import './styles/components.css';
 
 const GameRecording: React.FC = () => {
     const [isRecording, setIsRecording] = useState(false);

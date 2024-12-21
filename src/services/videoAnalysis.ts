@@ -4,17 +4,26 @@ export const analyzeVideo = async (videoFile: File): Promise<VideoAnalysisResult
     const formData = new FormData();
     formData.append('video', videoFile);
 
-    const response = await fetch('/api/video-analysis', {
-        method: 'POST',
-        body: formData,
+    // Mock response for now - replace with actual API call
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve({
+                id: Math.random().toString(36).substr(2, 9),
+                playerId: '123',
+                timestamp: new Date().toISOString(),
+                metrics: {
+                    speed: Math.random() * 30,
+                    accuracy: Math.random() * 100,
+                    possession: Math.random() * 100
+                },
+                highlights: [
+                    'Goal attempt at 2:15',
+                    'Successful pass at 3:45',
+                    'Sprint at 5:20'
+                ]
+            } as VideoAnalysisResult);
+        }, 2000);
     });
-
-    if (!response.ok) {
-        throw new Error('Video analysis failed');
-    }
-
-    const result: VideoAnalysisResult = await response.json();
-    return result;
 };
 
 export const getPlayerScores = async (playerId: string): Promise<number[]> => {

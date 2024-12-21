@@ -1,5 +1,5 @@
 import React from 'react';
-import './progressVisualization.css';
+import './styles/components.css';
 
 const ProgressVisualization: React.FC = () => {
     // Sample data for visualization

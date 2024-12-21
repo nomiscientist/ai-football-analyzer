@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './videoUpload.css';
+import './styles/components.css';
 
 const VideoUpload: React.FC = () => {
     const [videoFile, setVideoFile] = useState<File | null>(null);
