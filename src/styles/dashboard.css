@@ -1,0 +1,59 @@
+body {
+    background-color: #1a2a1a; /* Deep green background */
+    color: #ffffff; /* Bright white text */
+    font-family: 'Arial', sans-serif;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.header {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.stat-card {
+    background-color: #2a3a2a; /* Slightly lighter green for cards */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.stat-card:hover {
+    transform: scale(1.05);
+}
+
+.progress-bar {
+    background-color: #4caf50; /* Green for progress */
+    height: 20px;
+    border-radius: 5px;
+}
+
+.progress-container {
+    background-color: #ddd; /* Light grey background for progress */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.tactics-board {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    /* Remove or correct the path to the image */
+    /* background-image: url('/path/to/tactics-board-image.png'); */
+    background-size: cover;
+    margin-top: 20px;
+}

@@ -1,0 +1,84 @@
+body {
+    background-color: #1a2a1a; /* Deep green background */
+    color: #ffffff; /* Bright white text */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.recording-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #ffffff; /* White border */
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+}
+
+.recording-header {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.video-preview {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.record-button {
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.record-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.segmented-videos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.segmented-video {
+    background-color: #ffffff; /* White background for segmented videos */
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-title {
+    font-weight: bold;
+}
+
+.video-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.action-button {
+    background-color: #007BFF; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.action-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

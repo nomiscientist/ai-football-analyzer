@@ -1,0 +1,60 @@
+body {
+    background-color: #1a2a1a; /* Deep green background */
+    color: #ffffff; /* Bright white text */
+    font-family: 'Arial', sans-serif;
+}
+
+.video-analysis-container {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #2a3a2a; /* Slightly lighter green for contrast */
+}
+
+.analysis-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.video-player {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ffffff; /* White border around video player */
+    border-radius: 8px;
+}
+
+.analysis-results {
+    margin-top: 20px;
+}
+
+.result-item {
+    background-color: #3a4a3a; /* Darker green for result items */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.result-title {
+    font-weight: bold;
+}
+
+.progress-bar {
+    background-color: #4caf50; /* Green for progress */
+    height: 20px;
+    border-radius: 5px;
+}
+
+.progress-container {
+    background-color: #555; /* Darker background for progress container */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.score {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffcc00; /* Accent color for scores */
+    text-align: center;
+}
